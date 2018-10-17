@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Keg } from './models/keg.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  masterKegList: Keg[] = [
+    new Keg('Vaporizer', 'IPA', 5, 7.2),
+    new Keg('Bud Light', 'Lager', 3, 3.3),
+    new Keg('Two Towns', 'Cider', 6.5, 6.9)
+  ]
 }
