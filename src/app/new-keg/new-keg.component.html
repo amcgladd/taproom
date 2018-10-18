@@ -1,0 +1,28 @@
+<h1>Tap a New Keg</h1>
+<form>
+  <div>
+    <label>Enter Beer Name:</label>
+    <input #newName type="text">
+  </div>
+  <div>
+    <label>Enter Beer Type:</label>
+    <select #newType>
+      <option> Cider </option>
+      <option> IPA </option>
+      <option> Pilsner </option>
+      <option> Stout </option>
+      <option> Amber </option>
+    </select>
+  </div>
+  <div>
+    <label>Enter Beer Price:</label>
+    <input #newPrice type="number">
+  </div>
+  <div>
+    <label>Enter Beer ABV:</label>
+    <input #newABV type="number">
+  </div>
+  <div>
+  <button (click)="submitForm(newName.value, newType.value, newPrice.value, newABV.value); newName.value=''; newPrice.value=''; newABV.value='';">Tap It</button>
+  </div>
+</form>

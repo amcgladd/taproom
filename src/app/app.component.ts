@@ -9,7 +9,11 @@ import { Keg } from './models/keg.model';
 export class AppComponent {
   masterKegList: Keg[] = [
     new Keg('Vaporizer', 'IPA', 5, 7.2),
-    new Keg('Bud Light', 'Lager', 3, 3.3),
+    new Keg('Bud Light', 'Pilsner', 3, 3.3),
     new Keg('Two Towns', 'Cider', 6.5, 6.9)
   ]
+
+  addKeg(newKeg: Keg) {
+    this.masterKegList.push(newKeg);
+  }
 }
