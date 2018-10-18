@@ -25,4 +25,7 @@ export class AppComponent {
   finishEditing() {
     this.selectedKeg = null;
   }
+  subtractPint(pint) {
+    pint.quantity --;
+  }
 }

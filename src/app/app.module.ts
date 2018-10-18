@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { KegListComponent } from './keg-list/keg-list.component';
 import { NewKegComponent } from './new-keg/new-keg.component';
 import { EditKegComponent } from './edit-keg/edit-keg.component';
+import { SellPintComponent } from './sell-pint/sell-pint.component';
 
 
 
@@ -15,6 +16,7 @@ import { EditKegComponent } from './edit-keg/edit-keg.component';
     KegListComponent,
     NewKegComponent,
     EditKegComponent,
+    SellPintComponent,
   ],
   imports: [
     BrowserModule,

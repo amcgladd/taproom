@@ -7,5 +7,6 @@
       <li>{{currentKeg.quantity}}</li>
     </ul>
     <button (click)="editButtonClicked(currentKeg)">Edit</button>
+    <app-sell-pint [grandchildKegList]="currentKeg" (clickedSell)="sellAPint($event)"></app-sell-pint>
   </li>
 </ul>
