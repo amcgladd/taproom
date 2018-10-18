@@ -1,11 +1,11 @@
 <ul>
-  <li *ngFor="let keg of childKegList">{{keg.name}}
+  <li *ngFor="let currentKeg of childKegList">{{currentKeg.name}}
     <ul>
-      <li>{{keg.type}}</li>
-      <li>$ {{keg.price}}</li>
-      <li>{{keg.abv}} %</li>
-      <li>{{keg.quantity}}</li>
+      <li>{{currentKeg.type}}</li>
+      <li>$ {{currentKeg.price}}</li>
+      <li>{{currentKeg.abv}} %</li>
+      <li>{{currentKeg.quantity}}</li>
     </ul>
-    <button>Edit</button>
+    <button (click)="editButtonClicked(currentKeg)">Edit</button>
   </li>
 </ul>

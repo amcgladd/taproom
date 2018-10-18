@@ -1,11 +1,25 @@
 <div *ngIf="childSelectedKeg">
   <h1>Edit a Keg</h1>
-  <label>Name:</label>
-  <input [(ngModel)]="childSelectedKeg.name">
-  <label>Type:</label>
-  <input [(ngModel)]="childSelectedKeg.type">
-  <label>Price:</label>
-  <input [(ngModel)]="childSelectedKeg.price">
-  <label>ABV:</label>
-  <input [(ngModel)]="childSelectedKeg.abv">
+  <div>
+    <label>Name:</label>
+    <input [(ngModel)]="childSelectedKeg.name">
+  </div>
+  <div>
+    <label>Type</label>
+    <select [(ngModel)]="childSelectedKeg.type">
+      <option> Cider </option>
+      <option> IPA </option>
+      <option> Pilsner </option>
+      <option> Stout </option>
+      <option> Amber </option>
+    </select>
+  </div>
+  <div>
+    <label>Price:</label>
+    <input [(ngModel)]="childSelectedKeg.price">
+  </div>
+  <div>
+    <label>ABV:</label>
+    <input [(ngModel)]="childSelectedKeg.abv">
+  </div>
 </div>

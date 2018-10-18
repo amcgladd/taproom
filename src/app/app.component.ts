@@ -7,6 +7,8 @@ import { Keg } from './models/keg.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  selectedKeg = null;
+
   masterKegList: Keg[] = [
     new Keg('Vaporizer', 'IPA', 5, 7.2),
     new Keg('Bud Light', 'Pilsner', 3, 3.3),
@@ -15,5 +17,9 @@ export class AppComponent {
 
   addKeg(newKeg: Keg) {
     this.masterKegList.push(newKeg);
+  }
+
+  editKeg(clickedKeg) {
+    this.selectedKeg = clickedKeg;
   }
 }
